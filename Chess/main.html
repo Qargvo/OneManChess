@@ -1,0 +1,63 @@
+</!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+    <title>Gamedev Canvas Workshop</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Main -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="scripts/bootstrap-4.3.1-dist/js/bootstrap.js"></script>
+</head>
+<body>
+ 
+	  <!-- Шапка -->
+		<div class="col-lg-12">
+                <h1><img src="svg/king.png" class="png"><a href="main.html">OneManChess</a></h1>
+                <hr color="grey"> 
+        </div>
+    <!-- Контент -->
+        <div class="content"> 
+          <table cols="2" align="center">
+          	 <tr>
+          		<td>
+                   <div id="board"></div>
+                </td>
+                <td>
+	               <div class="in"> </br></div>	
+	               <div id='levels'></div> 
+                </td>
+          	 </tr>
+          	 <tr>
+          		<td>
+          			 <input type="button" value="Reset" id='Reset'>
+          		</td>
+             </tr>
+          </table>
+        </div> 
+    <!-- Modal-->
+           <div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModalLbld" aria-hidden="true">
+             <div class="modal-dialog" role="document">
+               <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="successModalLbl">U DID IT!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                       </button>
+                </div>
+                       <div class="modal-body">
+                         WINWINWIN
+                       </div>
+                       <div class="modal-footer">
+                       <button type="button" class="btn btn-primary" formaction="new levels">Go</button>
+                       </div>
+               </div>
+             </div>
+           </div>
+    <script src = "scripts/table_view.js"></script>
+    <script src = "scripts/turn.js"></script>
+</body>
+</html>
